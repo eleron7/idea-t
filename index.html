@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지
+    </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            background: url(images/background2.jpg);/*헤더 이미지*/
+            width: 1200px;
+            height: 360px;
+        }
+        
+        .top{
+            display: flex;
+            justify-content: space-between;/*(홈,마이페이지,책추천받기,리뷰페이지,책정보,메신저)-(회원가입)*/
+        }
+
+        .menu{
+            display: inline-flex;/*메뉴들을 가로로 나열*/
+        }
+
+        .menu a{
+            color: white;
+            text-decoration: none;/*a태그 밑줄제거*/
+            font-size: 20px;
+            text-align: center;
+            height: 46px;/*공통*/
+        }
+
+        /*투명박스는 현재 선택안된 메뉴만 표시*/
+        #home{/*home은 선택된 메뉴 >> 투명박스 제거*/
+            /* background: linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68)); */
+            width: 70px;
+        }
+
+        #my-page, #book-recommend, #book-review{/*5글자 메뉴*/
+            background: linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68));
+            width: 130px;
+        }
+
+        #book-info, #messenger{/*3글자 메뉴*/
+            background: linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68));
+            width: 100px;
+        }
+
+        .signup{
+            text-align: right;/*width에 상관없이 우측 배치*/
+            background: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68));/*반투명색 박스*/
+            width: 700px;
+            height: 46px;
+        }
+
+        .signup a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .signup img{
+            border-radius: 50%;/*프로필 이미지 둥글게*/
+        }
+
+        .title{
+            color: rgb(165, 109, 188);
+            text-align: center;/*제목 중앙정렬*/
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="top">
+            <div class="menu">
+                    <a id="home" href="index.html"><img src="images/home.png" alt="home-icon" width="40px"></a>  
+                    <a id="my-page" href="#">마이페이지</a>
+                    <a id="book-recommend" href="#">책추전받기</a>
+                    <a id="book-review" href="#">리뷰페이지</a>
+                    <a id="book-info" href="#">책정보</a>
+                    <a id="messenger" href="#">메신저</a>
+            </div>
+            <div class="signup">
+                <a id="none-choosed" href="#">
+                    회원가입
+                    <img src="images/profile.png" alt="profile-icon" width="35px">
+                </a>
+            </div>
+        </div>
+
+        <div class ="title">
+            <img src="images/book.png" alt="book-icon" width="72px" height="57px">
+            <h1>부크박스(BookBox)</h1>
+            <h2>환영합니다! 어떤 책을 들려드릴까요?</h2>
+        </div>
+
+        <div class ="search">
+            
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+</html>
